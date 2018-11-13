@@ -3,13 +3,13 @@ module.exports = {
 
     // http://eslint.org/docs/user-guide/configuring#specifying-environments
     env: {
-        // browser: true,
+        browser: true,
         // node: true,
         // commonjs: true,
         es6: true,
         // amd: true,
         // mocha: true,
-        jasmine: true,
+        // jasmine: true,
         // jest: true,
         // jquery: true,
     },
