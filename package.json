@@ -1,0 +1,46 @@
+{
+    "private": true,
+    "name": "warsawjs-workshop-26-my-photos",
+    "description": "TODO",
+    "version": "1.0.0",
+    "license": "MIT",
+    "author": {
+        "name": "Piotr Kowalski",
+        "email": "piecioshka@gmail.com",
+        "url": "https://piecioshka.pl/"
+    },
+    "scripts": {
+        "clear": "rm -rf dist/ coverage/",
+        "clear:all": "rm -rf node_modules/ && npm run clear",
+        "test": "npm run test:unit",
+        "test:unit": "jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json",
+        "coverage": "nyc npm run test && nyc report --reporter=html",
+        "coveralls": "nyc report --reporter=text-lcov | coveralls -v",
+        "count": "find . -name '*.js' -not -path './node_modules/*' | xargs wc -l | sort -r",
+        "lint": "eslint .",
+        "eject": "npm uninstall eslint eslint-config-piecioshka istanbul jasmine nyc"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "coveralls": "^3.0.2",
+        "eslint": "^5.8.0",
+        "eslint-config-piecioshka": "^2.0.1",
+        "istanbul": "^0.4.5",
+        "jasmine": "^3.3.0",
+        "nyc": "^13.1.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:piecioshka/warsawjs-workshop-26-my-photos.git"
+    },
+    "files": [
+        ".bin",
+        "src",
+        "index.js",
+        "package.json",
+        "README.md"
+    ],
+    "keywords": [],
+    "main": "./index.js",
+    "bin": "./.bin/cli.js"
+}
