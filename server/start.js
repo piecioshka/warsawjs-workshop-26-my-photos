@@ -1,4 +1,4 @@
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const path = require('path');
 const jsonServer = require('json-server');
@@ -13,5 +13,5 @@ server.use(require('prerender-node').set('prerenderToken', 'ILXgFE5wZVN3SYXqXT72
 server.use(middlewares);
 server.use(router);
 server.listen(PORT, () => {
-    console.log('JSON Server is running');
+    console.log(`JSON Server is running on http://localhost:${PORT}`);
 });
