@@ -12,6 +12,7 @@
     "scripts": {
         "clear": "echo DONE",
         "clear:all": "rm -rf node_modules/ && npm run clear",
+        "deploy": "git push heroku master -f",
         "lint": "eslint .",
         "lint:md": "markdownlint . --ignore _book --ignore node_modules",
         "start": "json-server --watch ./server/db.json --static ./client/",
