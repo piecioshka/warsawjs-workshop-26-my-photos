@@ -1,6 +1,7 @@
 {
     "photos": [
         {
+            "author": "Piotr Kowalski",
             "title": "My phone",
             "thumb": "https://picsum.photos/100/50/?image=160",
             "image": "https://picsum.photos/650/400/?image=160",
@@ -8,6 +9,7 @@
             "isFavorite": false
         },
         {
+            "author": "Katarzyna Grabowska",
             "title": "My favorite animal",
             "thumb": "https://picsum.photos/100/50/?image=200",
             "image": "https://picsum.photos/650/400/?image=200",
@@ -15,6 +17,7 @@
             "isFavorite": false
         },
         {
+            "author": "Piotr Kowalski",
             "title": "My office",
             "thumb": "https://picsum.photos/100/50/?image=201",
             "image": "https://picsum.photos/650/400/?image=201",
@@ -22,6 +25,7 @@
             "isFavorite": false
         },
         {
+            "author": "Katarzyna Grabowska",
             "title": "",
             "thumb": "https://picsum.photos/100/50/?image=202",
             "image": "https://picsum.photos/650/400/?image=202",
@@ -29,6 +33,7 @@
             "isFavorite": false
         },
         {
+            "author": "Piotr Kowalski",
             "title": "",
             "thumb": "https://picsum.photos/100/50/?image=203",
             "image": "https://picsum.photos/650/400/?image=203",
@@ -36,6 +41,7 @@
             "isFavorite": false
         },
         {
+            "author": "Katarzyna Grabowska",
             "title": "",
             "thumb": "https://picsum.photos/100/50/?image=204",
             "image": "https://picsum.photos/650/400/?image=204",
@@ -43,6 +49,7 @@
             "isFavorite": false
         },
         {
+            "author": "Piotr Kowalski",
             "title": "",
             "thumb": "https://picsum.photos/100/50/?image=55",
             "image": "https://picsum.photos/650/400/?image=55",
@@ -50,6 +57,7 @@
             "isFavorite": false
         },
         {
+            "author": "Katarzyna Grabowska",
             "title": "",
             "thumb": "https://picsum.photos/100/50/?image=206",
             "image": "https://picsum.photos/650/400/?image=206",
@@ -57,6 +65,7 @@
             "isFavorite": false
         },
         {
+            "author": "Piotr Kowalski",
             "title": "",
             "thumb": "https://picsum.photos/100/50/?image=107",
             "image": "https://picsum.photos/650/400/?image=107",

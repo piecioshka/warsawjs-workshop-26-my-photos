@@ -19,7 +19,8 @@ module.exports = {
         'no-console': 'off',
         'require-jsdoc': 'off',
         'object-curly-newline': 'off',
-        'no-process-env': 'off'
+        'no-process-env': 'off',
+        'func-style': 'off',
     },
 
     // List of global variables.

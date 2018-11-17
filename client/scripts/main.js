@@ -40,11 +40,16 @@ function renderGallery(photos) {
 
 function zoomPhoto(photo) {
     const $magnifier = document.querySelector('#magnifier');
-    const $photo = createImage(photo.image);
-    if ($magnifier.firstChild) {
-        $magnifier.firstChild.remove();
-    }
-    $magnifier.appendChild($photo);
+    const template = (data) => `
+        <figure>
+            <img src="${data.image}" alt="" />
+            <p class="author">Autor: <strong>${data.author}</strong></p>
+            <p class="tags">${data.tags.map(x => `#${x}`).join(', ')}</p>
+            <figcaption>${data.title}</figcaption>
+        </figure>
+    `;
+    const compiledTemplate = template(photo);
+    $magnifier.innerHTML = compiledTemplate;
 }
 
 async function setup() {

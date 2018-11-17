@@ -1,9 +1,9 @@
 :root {
-    --color-1: #E37B40;
-    --color-2: #46B29D;
-    --color-3: #DE5B49;
-    --color-4: #324D5C;
-    --color-5: #F0CA4D;
+    --color-1: #e37b40;
+    --color-2: #46b29d;
+    --color-3: #de5b49;
+    --color-4: #324d5c;
+    --color-5: #f0ca4d;
 }
 
 *::before,
@@ -14,13 +14,18 @@
 
 body {
     background: var(--color-4);
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: var(--color-5);
     margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Luckiest Guy', cursive;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Luckiest Guy", cursive;
 }
 
 a {
@@ -55,9 +60,45 @@ ul {
     cursor: pointer;
 }
 
+#magnifier {
+    position: relative;
+}
+
+#magnifier .author {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 5px 0 0 5px;
+    padding: 5px;
+}
+
+#magnifier .tags {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 5px 5px 0 0;
+    padding: 5px;
+}
+
+#magnifier .tags:empty {
+    display: none;
+}
+
+#magnifier figure {
+    margin: 0;
+    text-align: center;
+}
+
+#magnifier figcaption {
+    height: 50px;
+}
+
 #magnifier img {
     border: 5px solid var(--color-3);
-    background: white url('../images/azure-round-loader.gif') no-repeat center center;
+    background: white url("../images/azure-round-loader.gif") no-repeat center
+        center;
     width: 650px;
     height: 400px;
 }
@@ -74,4 +115,3 @@ ul {
     padding: 10px;
     text-align: center;
 }
-
