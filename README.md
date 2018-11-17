@@ -9,7 +9,7 @@
 
 <https://warsawjs-workshop-26-my-photos.herokuapp.com/>
 
-## Zakres funkcji projektu
+## Zakres funkcji projektu :memo:
 
 * :white_check_mark: Pobieranie zdjęć (Fetch API, Async / Await, Function Definition)
     + Stworzyć funkcję `fetchPhotos`
