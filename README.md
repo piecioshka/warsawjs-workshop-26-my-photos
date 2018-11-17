@@ -56,8 +56,11 @@
 * :white_check_mark: Wyszukiwania zdjęć po dowolnej cesze
     + Stworzyć funkcję `handleSearchForm`
     + Obsługiwać kilka wpisanych fraz
-    + Usuwać wszystkie zdjęcia, w przypadku braku wyniku
-    + Pokazywać wszystkie zdjęcia, w przypadku pustego zapytania
+    + W przypadku braku wyniku:
+        - Usuwać wszystkie zdjęcia
+        - Pokazać komunikat z informacją o braku wyników
+    + W przypadku pustego zapytania:
+        - Pokazywać wszystkie zdjęcia
     + Filtrowanie zdjęć według tagu
     + Filtrowanie zdjęć według autora
     + Filtrowanie zdjęć według tytułu

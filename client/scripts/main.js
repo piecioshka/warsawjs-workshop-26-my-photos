@@ -47,7 +47,7 @@ function renderGallery(photos = []) {
 
 function removeGallery() {
     const $gallery = document.querySelector('#gallery');
-    $gallery.innerHTML = '';
+    $gallery.innerHTML = '<p>Nic nie znaleziono</p>';
 }
 
 function zoomPhoto(photo) {
