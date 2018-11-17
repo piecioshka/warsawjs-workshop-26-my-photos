@@ -11,9 +11,9 @@
 
 ## Zakres funkcji projektu :memo:
 
-* :white_check_mark: Pobieranie zdjęć (Fetch API, Async / Await, Function Definition)
+* :white_check_mark: Pobieranie zdjęć (Fetch API, Async / Await, ClassDeclaration, FunctionDeclaration)
     + Stworzyć funkcję `fetchPhotos`
-* :white_check_mark: Prezentacja listy zdjęć (DOM, Array, Loops, Async Function, Default Parameters)
+* :white_check_mark: Prezentacja listy zdjęć (DOM, Array, Loops, ArrowFunction, Default Parameters)
     + Wykorzystać `appendChild` w procesie renderowania
     + Stworzyć funkcję `renderGallery`
     + **Dodatkowo:** Stworzyć paletę kolorów za pomocą `CSS Variables`
@@ -32,9 +32,14 @@
         - Zainstalować paczkę `gh-pages`
         - Stworzyć polecenie `npm run deploy`, które będzie uruchamiało
             `NODE_DEBUG=gh-pages gh-pages -d client/`
-    + Microsoft Azure
+    + Firebase (https://firebase.google.com/)
         - TODO
-        - Stworzuć polecenie `npm run deploy`
+    + Netlify (https://www.netlify.com/)
+        - TODO
+    + Surge (http://surge.sh/)
+        - TODO
+    + Microsoft Azure (https://azure.microsoft.com/)
+        - TODO
 * :white_check_mark: Prezentacja wybranego zdjęcia w formie lightboxa
 
     _Podobny projekt: https://github.com/piecioshka/warsawjs-workshop-1-gallery_
