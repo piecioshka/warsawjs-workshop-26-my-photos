@@ -1,7 +1,7 @@
 # warsawjs-workshop-26-my-photos
 
 [![dependencies](https://david-dm.org/piecioshka/warsawjs-workshop-26-my-photos.svg)](https://github.com/piecioshka/warsawjs-workshop-26-my-photos)
-[![heroku](https://heroku-badge.herokuapp.com/?app=warsawjs-workshop-26-my-photos)](https://warsawjs-workshop-26-my-photos.herokuapp.com/)
+[![heroku](https://heroku-badge.herokuapp.com/?app=warsawjs-workshop-26-my-photos&style=flat&svg=1)](https://warsawjs-workshop-26-my-photos.herokuapp.com/)
 
 **WarsawJS Workshop #26**: Projekt będący portfolio pewnego fotografa
 
