@@ -15,14 +15,22 @@ function renderGallery(photos) {
 
     photos.forEach((photo, index) => {
         const $photo = createImage(photo.thumb);
-        $photo.addEventListener('click', () => zoomPhoto(photo));
 
         if (index === 0) {
             zoomPhoto(photo);
         }
 
+        const $link = document.createElement('a');
+        $link.setAttribute('href', photo.image);
+        $link.appendChild($photo);
+
+        $photo.addEventListener('click', (evt) => {
+            evt.preventDefault();
+            zoomPhoto(photo);
+        });
+
         const $item = document.createElement('li');
-        $item.appendChild($photo);
+        $item.appendChild($link);
 
         $photos.appendChild($item);
     });

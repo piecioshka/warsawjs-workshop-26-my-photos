@@ -24,7 +24,17 @@
     + Refactoring: Stworzenie funkcji, która tworzy obrazek
     + Uwaga: Usuwanie poprzedniego zdjęcia przed pokazaniem kolejnego
     + Po uruchomieniu aplikacji powiększyć pierwsze zdjęcie z listy
+    + Dodatkowo: Deployment na Heroku
+        - Stworzyć nową aplikację na https://dashboard.heroku.com/apps/
+        - Połączyć lokalne repozytorium z aplikacją za pomocą polecenia
+            `heroku git:remote -a NAZWA_APLIKACJI_NA_HEROKU`
+        - Opublikować projekt na Heroku za pomocą `git push heroku master`
+        - Wspierać zmienną środowiskową `$PORT` poprzez dopisanie `--port $PORT`
+            na końcu polecenia `npm start`
     + Dodatkowo: Wspierać przeglądarki z wyłączonym JavaScriptem
+        - Zarejestrować się na https://prerender.io/
+        - Na stronie https://prerender.io/ wygnerować token
+        - Zaktualizować wartość stałej `PRERENDER_TOKEN` w pliku `server/start.js`
 * Dodawanie cech zdjęciom: autor, kategoria
     + Filtrowanie zdjęć według kategorii
 * Wyszukiwania zdjęć po dowolnej cesze
