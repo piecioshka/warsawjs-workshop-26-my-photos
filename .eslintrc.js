@@ -4,8 +4,8 @@ module.exports = {
     // http://eslint.org/docs/user-guide/configuring#specifying-environments
     env: {
         browser: true,
-        // node: true,
-        // commonjs: true,
+        node: true,
+        commonjs: true,
         es6: true,
         // amd: true,
         // mocha: true,
@@ -17,7 +17,9 @@ module.exports = {
     // http://eslint.org/docs/rules/
     rules: {
         'no-console': 'off',
-        'require-jsdoc': 'off'
+        'require-jsdoc': 'off',
+        'object-curly-newline': 'off',
+        'no-process-env': 'off'
     },
 
     // List of global variables.
