@@ -10,7 +10,7 @@
                 "phone",
                 "table"
             ],
-            "isFavorite": false
+            "isFavorite": true
         },
         {
             "id": 20,
@@ -22,7 +22,7 @@
                 "animal",
                 "orange"
             ],
-            "isFavorite": false
+            "isFavorite": true
         },
         {
             "id": 30,
@@ -35,7 +35,7 @@
                 "glasses",
                 "computer"
             ],
-            "isFavorite": false
+            "isFavorite": true
         },
         {
             "id": 40,
@@ -80,7 +80,7 @@
             "thumb": "https://picsum.photos/100/50/?image=206",
             "image": "https://picsum.photos/650/400/?image=206",
             "tags": [],
-            "isFavorite": false
+            "isFavorite": true
         },
         {
             "id": 90,

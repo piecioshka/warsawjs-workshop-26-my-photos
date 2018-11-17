@@ -60,7 +60,7 @@
     + Filtrowanie zdjęć według tagu
     + Filtrowanie zdjęć według autora
     + Filtrowanie zdjęć według tytułu
-* Dodawanie zdjęć do ulubionych (LocalStorage)
+* :white_check_mark: Dodawanie zdjęć do ulubionych (LocalStorage)
     + UWAGA: w komunikacji z serwerem należy dodać nagłówek:
         ```json
         headers:{
@@ -70,9 +70,6 @@
     + Prezentowanie tylko ulubionych zdjęć
 * **Dodatkowo:** Prezentacja zdjęć w formie before / after za pomocą slidera
     + Wykorzystać https://github.com/piecioshka/slider-before-after
-* ...
-* :white_check_mark: Done
-* :no_entry: Not done
 
 ## Wykorzystywane narzędzia
 

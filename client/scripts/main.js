@@ -10,6 +10,12 @@ async function fetchPhotos() {
 }
 
 function renderGallery(photos = []) {
+    if (photos.length === 0) {
+        removeZoomPhoto();
+        removeGallery();
+        return;
+    }
+
     const $gallery = document.querySelector('#gallery');
     const $photos = document.createElement('ul');
 
@@ -37,6 +43,11 @@ function renderGallery(photos = []) {
 
     $gallery.innerHTML = '';
     $gallery.appendChild($photos);
+}
+
+function removeGallery() {
+    const $gallery = document.querySelector('#gallery');
+    $gallery.innerHTML = '';
 }
 
 function zoomPhoto(photo) {
@@ -112,11 +123,19 @@ function handleSearchForm(photos) {
             return isMatchedTag || isFoundAuthor || isFoundTitle;
         });
 
-        if (filteredPhotos.length === 0) {
-            removeZoomPhoto();
-            renderGallery();
-            return;
-        }
+        renderGallery(filteredPhotos);
+    });
+}
+
+function handleDisplayFavoritesPhotos(photos) {
+    const $button = document.querySelector('.display-favorites-photos');
+
+    $button.addEventListener('click', () => {
+        $button.classList.toggle('active');
+        const isSelected = $button.classList.contains('active');
+        const filteredPhotos = isSelected
+            ? photos.filter(p => p.isFavorite)
+            : photos;
 
         renderGallery(filteredPhotos);
     });
@@ -125,6 +144,7 @@ function handleSearchForm(photos) {
 async function setup() {
     const photos = await fetchPhotos();
     renderGallery(photos);
+    handleDisplayFavoritesPhotos(photos);
     handleSearchForm(photos);
 }
 

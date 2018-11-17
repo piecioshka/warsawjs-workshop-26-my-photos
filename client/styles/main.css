@@ -51,6 +51,26 @@ ul {
     margin: 0 auto;
 }
 
+.display-favorites-photos-panel {
+    float: left;
+    cursor: pointer;
+}
+
+.display-favorites-photos {
+    font-size: 13px;
+    height: 26px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 5px;
+    vertical-align: top;
+    outline: none;
+}
+
+.display-favorites-photos.active {
+    background: var(--color-3);
+    color: white;
+}
+
 #search {
     text-align: right;
     margin: 10px 0;
