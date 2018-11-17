@@ -51,6 +51,40 @@ ul {
     margin: 0 auto;
 }
 
+#search {
+    text-align: right;
+    margin: 10px 0;
+}
+
+#search input[type="text"] {
+    font-size: 16px;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+}
+
+#search input[type="submit"] {
+    font-size: 13px;
+    height: 26px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    vertical-align: top;
+    background: var(--color-1);
+    color: white;
+    font-family: "Open Sans", sans-serif;
+}
+
+#search input[type="submit"]:hover {
+    background: var(--color-3);
+}
+#search .hint {
+    font-size: 13px;
+    margin: 2px 0;
+    color: var(--color-2);
+}
+
 #gallery {
     width: 225px;
 }

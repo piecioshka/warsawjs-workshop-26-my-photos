@@ -9,7 +9,7 @@ async function fetchPhotos() {
     return await response.json();
 }
 
-function renderGallery(photos) {
+function renderGallery(photos = []) {
     const $gallery = document.querySelector('#gallery');
     const $photos = document.createElement('ul');
 
@@ -35,6 +35,7 @@ function renderGallery(photos) {
         $photos.appendChild($item);
     });
 
+    $gallery.innerHTML = '';
     $gallery.appendChild($photos);
 }
 
@@ -52,9 +53,58 @@ function zoomPhoto(photo) {
     $magnifier.innerHTML = compiledTemplate;
 }
 
+function removeZoomPhoto() {
+    const $magnifier = document.querySelector('#magnifier');
+    $magnifier.innerHTML = '';
+}
+
+function handleSearchForm(photos) {
+    const $searchForm = document.querySelector('#search');
+
+    $searchForm.addEventListener('submit', (evt) => {
+        evt.preventDefault();
+
+        const data = new FormData($searchForm);
+        const query = data.get('query');
+        const words = query.split(',')
+            .map(s => s.trim())
+            .filter(s => s)
+            .map(s => s.toLowerCase());
+        const tags = words
+            .filter(w => (/^#/).test(w));
+
+        if (words.length === 0) {
+            renderGallery(photos);
+            return;
+        }
+
+        const filteredPhotos = photos.filter((photo) => {
+            const isMatchedTag = photo.tags
+                .filter(photoTag => tags.includes(`#${photoTag}`)).length;
+
+            const isFoundAuthor = words
+                .filter(word => photo.author.toLowerCase().match(word)).length;
+
+            const isFoundTitle = words
+                .filter(word => photo.title.toLowerCase().match(word)).length;
+
+            return isMatchedTag || isFoundAuthor || isFoundTitle;
+        });
+
+        if (filteredPhotos.length === 0) {
+            removeZoomPhoto();
+            renderGallery();
+            return;
+        }
+
+        renderGallery(filteredPhotos);
+    });
+}
+
 async function setup() {
     const photos = await fetchPhotos();
     renderGallery(photos);
+    handleSearchForm(photos);
 }
 
 setup();

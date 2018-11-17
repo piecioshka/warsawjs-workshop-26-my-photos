@@ -9,11 +9,11 @@
 
 <https://warsawjs-workshop-26-my-photos.herokuapp.com/>
 
-## Lista funkcji w projekcie
+## Zakres funkcji projektu
 
 * :white_check_mark: Pobieranie zdjęć (Fetch API, Async / Await, Function Definition)
     + Stworzenie funkcji `fetchPhotos`
-* :white_check_mark: Prezentacja listy zdjęć (DOM, Array, Loops, Async Function)
+* :white_check_mark: Prezentacja listy zdjęć (DOM, Array, Loops, Async Function, Default Parameters)
     + Wykorzystać `appendChild` w procesie renderowania
     + Stworzenie funkcji `renderGallery`
     + **Dodatkowo:** Stworzyć paletę kolorów za pomocą `CSS Variables`
@@ -21,7 +21,7 @@
     + **Dodatkowo:** Ułożyć listy za pomocą `CSS Flexbox`
     + **Dodatkowo:** Dodać stopkę z encją `&copy;`
     + **Dodatkowo:** Dodać `GitHub Ribbon`: https://blog.github.com/2008-12-19-github-ribbons/
-* :white_check_mark: Deployment
+* :white_check_mark: Deployment :rocket:
     + Heroku
         - Stworzyć nową aplikację na https://dashboard.heroku.com/apps/
         - Połączyć lokalne repozytorium z aplikacją za pomocą polecenia
@@ -42,18 +42,24 @@
     + Stworzyć funkcję `zoomPhoto`
     + Uwaga: Usuwać poprzednie powiększone zdjęcie przed pokazaniem kolejnego
     + Po uruchomieniu aplikacji powiększyć pierwsze zdjęcie z listy automatycznie
-    + **Dodatkowo:** Dodać loader pod duży obrazek — wykorzystać https://loading.io/
+    + **Dodatkowo:** Podczas ładowania dużego obrazka pokazać loader, pobrać
+        go ze strony https://loading.io/
 * :white_check_mark: **Dodatkowo:** Wsparcie przeglądarek bez JavaScriptu
     + Zarejestrować się na https://prerender.io/
     + Wygnerować token na stronie https://prerender.io/
     + Zaktualizować wartość stałej `PRERENDER_TOKEN` w pliku `server/start.js`
-* Prezentowanie danych nt. zdjęcia: autora, tagu
+* :white_check_mark: Prezentowanie danych nt. zdjęcia: autora, tagu
     + Wykorzystać `innerHTML` w procesie renderowania
     + Tagi przechowywać w formie wyrazów (bez hashy)
     + Tagi wyświetlać poprzedzając każdego z nich hashem
-    + Chować kontener z tagami, kiedy ich nie ma
-* Filtrowanie zdjęć według tagu
-* Wyszukiwania zdjęć po dowolnej cesze
+    + Chować kontener z tagami, gdy ich nie ma
+* :white_check_mark: Wyszukiwania zdjęć po dowolnej cesze
+    + Obsługiwać kilka wpisanych fraz
+    + Usuwać wszystkie zdjęcia, w przypadku braku wyniku
+    + Pokazywać wszystkie zdjęcia, w przypadku pustego zapytania
+    + Filtrowanie zdjęć według tagu
+    + Filtrowanie zdjęć według autora
+    + Filtrowanie zdjęć według tytułu
 * Dodawanie zdjęć do ulubionych
     + Prezentowanie tylko ulubionych zdjęć
 * **Dodatkowo:** Prezentacja zdjęć w formie before / after za pomocą slidera
