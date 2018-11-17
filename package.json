@@ -13,8 +13,8 @@
         "clear": "echo DONE",
         "clear:all": "rm -rf node_modules/ && npm run clear",
         "lint": "eslint .",
-        "dev": "json-server --watch ./server/db.json --static ./client/",
-        "start": "node server/start.js"
+        "start": "json-server --watch ./server/db.json --static ./client/",
+        "start-server-with-ssr": "node server/start.js"
     },
     "dependencies": {
         "json-server": "^0.14.0",

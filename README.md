@@ -29,8 +29,6 @@
         - Połączyć lokalne repozytorium z aplikacją za pomocą polecenia
             `heroku git:remote -a NAZWA_APLIKACJI_NA_HEROKU`
         - Opublikować projekt na Heroku za pomocą `git push heroku master`
-        - Wspierać zmienną środowiskową `$PORT` poprzez dopisanie `--port $PORT`
-            na końcu polecenia `npm start`
     + Dodatkowo: Wspierać przeglądarki z wyłączonym JavaScriptem
         - Zarejestrować się na https://prerender.io/
         - Na stronie https://prerender.io/ wygnerować token
