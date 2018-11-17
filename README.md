@@ -12,10 +12,10 @@
 ## Zakres funkcji projektu
 
 * :white_check_mark: Pobieranie zdjęć (Fetch API, Async / Await, Function Definition)
-    + Stworzenie funkcji `fetchPhotos`
+    + Stworzyć funkcję `fetchPhotos`
 * :white_check_mark: Prezentacja listy zdjęć (DOM, Array, Loops, Async Function, Default Parameters)
     + Wykorzystać `appendChild` w procesie renderowania
-    + Stworzenie funkcji `renderGallery`
+    + Stworzyć funkcję `renderGallery`
     + **Dodatkowo:** Stworzyć paletę kolorów za pomocą `CSS Variables`
     + **Dodatkowo:** Osadzić fonty z https://fonts.google.com (nagłówki i tekst)
     + **Dodatkowo:** Ułożyć listy za pomocą `CSS Flexbox`
@@ -54,13 +54,15 @@
     + Tagi wyświetlać poprzedzając każdego z nich hashem
     + Chować kontener z tagami, gdy ich nie ma
 * :white_check_mark: Wyszukiwania zdjęć po dowolnej cesze
+    + Stworzyć funkcję `handleSearchForm`
     + Obsługiwać kilka wpisanych fraz
     + Usuwać wszystkie zdjęcia, w przypadku braku wyniku
     + Pokazywać wszystkie zdjęcia, w przypadku pustego zapytania
     + Filtrowanie zdjęć według tagu
     + Filtrowanie zdjęć według autora
     + Filtrowanie zdjęć według tytułu
-* :white_check_mark: Dodawanie zdjęć do ulubionych (LocalStorage)
+* :white_check_mark: Dodawanie zdjęć do ulubionych (Fetch API)
+    + Stworzyć funkcję `handleLike`
     + UWAGA: w komunikacji z serwerem należy dodać nagłówek:
         ```js
         headers: {
@@ -68,6 +70,7 @@
         }
         ```
     + Prezentowanie tylko ulubionych zdjęć
+    + Stworzyć funkcję `handleDisplayFavoritesPhotos`
 * :white_check_mark: **Dodatkowo:** Prezentacja zdjęć w formie before / after za pomocą slidera
     + Wykorzystać https://github.com/piecioshka/slider-before-after
 
