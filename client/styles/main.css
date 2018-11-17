@@ -4,6 +4,10 @@
     --color-3: #de5b49;
     --color-4: #324d5c;
     --color-5: #f0ca4d;
+
+    --track-height: 100%;
+    --track-width: 2px;
+    --track-color: white;
 }
 
 *::before,
@@ -44,6 +48,15 @@ ul {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+input[type="range"].slider-track {
+    opacity: 1;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px groove var(--color-1);
 }
 
 #app {
@@ -176,6 +189,10 @@ ul {
 #main {
     display: flex;
     justify-content: space-between;
+}
+
+.slider-before-after {
+    margin: 20px 0;
 }
 
 #footer {

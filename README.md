@@ -62,16 +62,16 @@
     + Filtrowanie zdjęć według tytułu
 * :white_check_mark: Dodawanie zdjęć do ulubionych (LocalStorage)
     + UWAGA: w komunikacji z serwerem należy dodać nagłówek:
-        ```json
-        headers:{
-            'Content-Type': 'application/json'
+        ```js
+        headers: {
+            "Content-Type": "application/json"
         }
         ```
     + Prezentowanie tylko ulubionych zdjęć
-* **Dodatkowo:** Prezentacja zdjęć w formie before / after za pomocą slidera
+* :white_check_mark: **Dodatkowo:** Prezentacja zdjęć w formie before / after za pomocą slidera
     + Wykorzystać https://github.com/piecioshka/slider-before-after
 
-## Wykorzystywane narzędzia
+## Wykorzystywane narzędzia :hammer:
 
 * `eslint`
 * `markdownlint-cli`

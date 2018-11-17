@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://unpkg.com/slider-before-after/src/styles/main.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/slider-before-after/src/styles/custom-range-input.css"/>
+
     <link rel="stylesheet" href="styles/main.css"/>
 </head>
 <body>
@@ -33,6 +36,20 @@
         <div id="magnifier"></div>
     </div>
 
+    <hr/>
+
+    <h2>Przed / Po</h2>
+
+    <div class="slider-before-after">
+        <div class="slider-before-image">
+            <img src="https://picsum.photos/g/900/300?image=180" alt=""/>
+        </div>
+        <div class="slider-after-image">
+            <img src="https://picsum.photos/900/300?image=180" alt=""/>
+        </div>
+        <input type="range" class="slider-track"/>
+    </div>
+
     <footer id="footer">
         <p>
             Aplikacja zrealizowana na potrzeby
@@ -44,6 +61,7 @@
     </footer>
 </div>
 
+<script src="https://unpkg.com/slider-before-after/src/scripts/slider-before-after.js"></script>
 <script src="scripts/main.js"></script>
 
 </body>
