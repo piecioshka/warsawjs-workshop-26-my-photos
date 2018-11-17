@@ -16,7 +16,8 @@ module.exports = {
 
     // http://eslint.org/docs/rules/
     rules: {
-        'no-console': 'off'
+        'no-console': 'off',
+        'require-jsdoc': 'off'
     },
 
     // List of global variables.

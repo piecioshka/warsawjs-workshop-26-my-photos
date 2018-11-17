@@ -1,0 +1,67 @@
+{
+    "photos": [
+        {
+            "title": "My phone",
+            "thumb": "https://picsum.photos/100/50/?image=160",
+            "image": "https://picsum.photos/650/400/?image=160",
+            "tags": ["phone", "table"],
+            "isFavorite": false
+        },
+        {
+            "title": "My favorite animal",
+            "thumb": "https://picsum.photos/100/50/?image=200",
+            "image": "https://picsum.photos/650/400/?image=200",
+            "tags": ["animal", "orange"],
+            "isFavorite": false
+        },
+        {
+            "title": "My office",
+            "thumb": "https://picsum.photos/100/50/?image=201",
+            "image": "https://picsum.photos/650/400/?image=201",
+            "tags": ["table", "glasses", "computer"],
+            "isFavorite": false
+        },
+        {
+            "title": "",
+            "thumb": "https://picsum.photos/100/50/?image=202",
+            "image": "https://picsum.photos/650/400/?image=202",
+            "tags": [],
+            "isFavorite": false
+        },
+        {
+            "title": "",
+            "thumb": "https://picsum.photos/100/50/?image=203",
+            "image": "https://picsum.photos/650/400/?image=203",
+            "tags": [],
+            "isFavorite": false
+        },
+        {
+            "title": "",
+            "thumb": "https://picsum.photos/100/50/?image=204",
+            "image": "https://picsum.photos/650/400/?image=204",
+            "tags": [],
+            "isFavorite": false
+        },
+        {
+            "title": "",
+            "thumb": "https://picsum.photos/100/50/?image=55",
+            "image": "https://picsum.photos/650/400/?image=55",
+            "tags": [],
+            "isFavorite": false
+        },
+        {
+            "title": "",
+            "thumb": "https://picsum.photos/100/50/?image=206",
+            "image": "https://picsum.photos/650/400/?image=206",
+            "tags": [],
+            "isFavorite": false
+        },
+        {
+            "title": "",
+            "thumb": "https://picsum.photos/100/50/?image=107",
+            "image": "https://picsum.photos/650/400/?image=107",
+            "tags": [],
+            "isFavorite": false
+        }
+    ]
+}
