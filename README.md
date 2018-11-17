@@ -60,7 +60,13 @@
     + Filtrowanie zdjęć według tagu
     + Filtrowanie zdjęć według autora
     + Filtrowanie zdjęć według tytułu
-* Dodawanie zdjęć do ulubionych
+* Dodawanie zdjęć do ulubionych (LocalStorage)
+    + UWAGA: w komunikacji z serwerem należy dodać nagłówek:
+        ```json
+        headers:{
+            'Content-Type': 'application/json'
+        }
+        ```
     + Prezentowanie tylko ulubionych zdjęć
 * **Dodatkowo:** Prezentacja zdjęć w formie before / after za pomocą slidera
     + Wykorzystać https://github.com/piecioshka/slider-before-after

@@ -22,6 +22,7 @@ module.exports = {
         'no-process-env': 'off',
         'func-style': 'off',
         'arrow-parens': 'off',
+        'no-use-before-define': 'off',
         'no-magic-numbers': ['error', {
             ignore: [0]
         }],

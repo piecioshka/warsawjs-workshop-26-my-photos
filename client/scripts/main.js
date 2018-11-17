@@ -46,11 +46,32 @@ function zoomPhoto(photo) {
             <img src="${data.image}" alt="" />
             <p class="author">Autor: <strong>${data.author}</strong></p>
             <p class="tags">${data.tags.map(x => `#${x}`).join(', ')}</p>
+            <button class="like ${data.isFavorite && 'yes'}">♥</button>
             <figcaption>${data.title}</figcaption>
         </figure>
     `;
     const compiledTemplate = template(photo);
     $magnifier.innerHTML = compiledTemplate;
+
+    handleLike(photo);
+}
+
+function handleLike(photo) {
+    const $like = document.querySelector('.like');
+    $like.addEventListener('click', () => {
+        $like.classList.toggle('yes');
+
+        const isFavorite = $like.classList.contains('yes');
+        photo.isFavorite = isFavorite;
+
+        fetch(`/photos/${photo.id}`, {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ isFavorite })
+        });
+    });
 }
 
 function removeZoomPhoto() {

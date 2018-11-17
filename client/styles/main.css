@@ -79,6 +79,7 @@ ul {
 #search input[type="submit"]:hover {
     background: var(--color-3);
 }
+
 #search .hint {
     font-size: 13px;
     margin: 2px 0;
@@ -96,6 +97,19 @@ ul {
 
 #magnifier {
     position: relative;
+}
+
+#magnifier figure {
+    margin: 0;
+    text-align: center;
+}
+
+#magnifier img {
+    border: 5px solid var(--color-3);
+    background: white url("../images/azure-round-loader.gif") no-repeat center
+        center;
+    width: 650px;
+    height: 400px;
 }
 
 #magnifier .author {
@@ -120,21 +134,23 @@ ul {
     display: none;
 }
 
-#magnifier figure {
-    margin: 0;
-    text-align: center;
+#magnifier .like {
+    background: none;
+    border: none;
+    font-size: 50px;
+    position: absolute;
+    right: 10px;
+    top: 330px;
+    outline: none;
+    cursor: pointer;
+}
+
+#magnifier .like.yes {
+    color: red;
 }
 
 #magnifier figcaption {
     height: 50px;
-}
-
-#magnifier img {
-    border: 5px solid var(--color-3);
-    background: white url("../images/azure-round-loader.gif") no-repeat center
-        center;
-    width: 650px;
-    height: 400px;
 }
 
 #main {
