@@ -23,6 +23,8 @@
         "prerender-node": "^3.2.1"
     },
     "devDependencies": {
+        "eslint": "^5.9.0",
+        "eslint-config-piecioshka": "^2.0.1",
         "markdownlint-cli": "^0.13.0"
     },
     "repository": {
