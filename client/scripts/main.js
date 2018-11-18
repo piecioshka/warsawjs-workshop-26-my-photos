@@ -1,9 +1,3 @@
-function createImage(url) {
-    const $photo = document.createElement('img');
-    $photo.setAttribute('src', url);
-    return $photo;
-}
-
 async function fetchPhotos() {
     const response = await fetch('/photos');
     return await response.json();
@@ -20,7 +14,8 @@ function renderGallery(photos = []) {
     const $photos = document.createElement('ul');
 
     photos.forEach((photo, index) => {
-        const $photo = createImage(photo.thumb);
+        const $photo = document.createElement('img');
+        $photo.setAttribute('src', photo.thumb);
 
         if (index === 0) {
             zoomPhoto(photo);
