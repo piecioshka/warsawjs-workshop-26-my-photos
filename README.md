@@ -5,11 +5,11 @@
 
 **WarsawJS Workshop #26**: Projekt będący portfolio pewnego fotografa
 
-## Demo :tada:
+## Demo 🎉
 
 <https://warsawjs-workshop-26-my-photos.herokuapp.com/>
 
-## Zakres funkcji projektu :memo:
+## Features
 
 * :white_check_mark: Pobieranie zdjęć (Fetch API, Async / Await, ClassDeclaration, FunctionDeclaration)
     + Stworzyć funkcję `fetchPhotos`
