@@ -11,19 +11,19 @@
 
 ## Features
 
-* :white_check_mark: Pobieranie zdjęć (Fetch API, Async / Await, ClassDeclaration, FunctionDeclaration)
+* :white_check_mark: Pobieranie zdjęć (Fetch API, async/await, ClassDeclaration, FunctionDeclaration)
     + Stworzyć funkcję `fetchPhotos`
 * :white_check_mark: Prezentacja listy zdjęć (DOM, Array, Loops, ArrowFunction, Default Parameters)
     + Wykorzystać `appendChild` w procesie renderowania
     + Stworzyć funkcję `renderGallery`
     + **Dodatkowo:** Stworzyć paletę kolorów za pomocą `CSS Variables`
-    + **Dodatkowo:** Osadzić fonty z https://fonts.google.com (nagłówki i tekst)
+    + **Dodatkowo:** Osadzić fonty z <https://fonts.google.com> (nagłówki i tekst)
     + **Dodatkowo:** Ułożyć listy za pomocą `CSS Flexbox`
     + **Dodatkowo:** Dodać stopkę z encją `&copy;`
-    + **Dodatkowo:** Dodać `GitHub Ribbon`: https://blog.github.com/2008-12-19-github-ribbons/
+    + **Dodatkowo:** Dodać `GitHub Ribbon`: <https://blog.github.com/2008-12-19-github-ribbons/>
 * :white_check_mark: Deployment :rocket:
     + Heroku
-        - Stworzyć nową aplikację na https://dashboard.heroku.com/apps/
+        - Stworzyć nową aplikację na <https://dashboard.heroku.com/apps/>
         - Połączyć lokalne repozytorium z aplikacją za pomocą polecenia
             `heroku git:remote -a NAZWA_APLIKACJI_NA_HEROKU`
         - Stworzyć polecenie `npm run deploy`, które będzie uruchamiało
@@ -32,26 +32,26 @@
         - Zainstalować paczkę `gh-pages`
         - Stworzyć polecenie `npm run deploy`, które będzie uruchamiało
             `NODE_DEBUG=gh-pages gh-pages -d client/`
-    + Firebase (https://firebase.google.com/)
+    + Firebase (<https://firebase.google.com/>)
         - TODO
-    + Netlify (https://www.netlify.com/)
+    + Netlify (<https://www.netlify.com/>)
         - TODO
-    + Surge (http://surge.sh/)
+    + Surge (<http://surge.sh/>)
         - TODO
-    + Microsoft Azure (https://azure.microsoft.com/)
+    + Microsoft Azure (<https://azure.microsoft.com/>)
         - TODO
 * :white_check_mark: Prezentacja wybranego zdjęcia w formie lightboxa
 
-    _Podobny projekt: https://github.com/piecioshka/warsawjs-workshop-1-gallery_
+    _Podobny projekt: <https://github.com/piecioshka/warsawjs-workshop-1-gallery>_
 
     + Stworzyć funkcję `zoomPhoto`
     + Uwaga: Usuwać poprzednie powiększone zdjęcie przed pokazaniem kolejnego
     + Po uruchomieniu aplikacji powiększyć pierwsze zdjęcie z listy automatycznie
     + **Dodatkowo:** Podczas ładowania dużego obrazka pokazać loader, pobrać
-        go ze strony https://loading.io/
+        go ze strony <https://loading.io/>
 * :white_check_mark: **Dodatkowo:** Wsparcie przeglądarek bez JavaScriptu
-    + Zarejestrować się na https://prerender.io/
-    + Wygnerować token na stronie https://prerender.io/
+    + Zarejestrować się na <https://prerender.io/>
+    + Wygnerować token na stronie <https://prerender.io/>
     + Zaktualizować wartość stałej `PRERENDER_TOKEN` w pliku `server/start.js`
 * :white_check_mark: Prezentowanie danych nt. zdjęcia: autora, tagu, tytuł
     + Stworzyć funkcję `displayPhotoDetails`
@@ -81,7 +81,7 @@
     + Prezentowanie tylko ulubionych zdjęć
     + Stworzyć funkcję `handleDisplayFavoritesPhotos`
 * :white_check_mark: **Dodatkowo:** Prezentacja zdjęć w formie before / after za pomocą slidera
-    + Wykorzystać https://github.com/piecioshka/slider-before-after
+    + Wykorzystać <https://github.com/piecioshka/slider-before-after>
 
 ## Wykorzystywane narzędzia :hammer:
 
