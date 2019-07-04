@@ -1,34 +1,38 @@
 {
-    "private": true,
-    "name": "warsawjs-workshop-26-my-photos",
-    "description": "WarsawJS Workshop #26: Projekt będący portfolio pewnego fotografa",
-    "version": "1.0.0",
-    "license": "MIT",
-    "author": {
-        "name": "Piotr Kowalski",
-        "email": "piecioshka@gmail.com",
-        "url": "https://piecioshka.pl/"
-    },
-    "scripts": {
-        "clear": "echo DONE",
-        "clear:all": "rm -rf node_modules/ && npm run clear",
-        "deploy": "git push heroku master -f",
-        "lint": "eslint .",
-        "lint:md": "markdownlint . --ignore _book --ignore node_modules",
-        "start": "json-server --watch ./server/db.json --static ./client/",
-        "start-server-with-ssr": "node server/start.js"
-    },
-    "dependencies": {
-        "json-server": "^0.14.0",
-        "prerender-node": "^3.2.1"
-    },
-    "devDependencies": {
-        "eslint": "^5.9.0",
-        "eslint-config-piecioshka": "^2.0.1",
-        "markdownlint-cli": "^0.13.0"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:piecioshka/warsawjs-workshop-26-my-photos.git"
-    }
+  "private": true,
+  "name": "warsawjs-workshop-26-my-photos",
+  "description": "WarsawJS Workshop #26: Projekt będący portfolio pewnego fotografa",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Piotr Kowalski",
+    "email": "piecioshka@gmail.com",
+    "url": "https://piecioshka.pl/"
+  },
+  "scripts": {
+    "clear": "echo DONE",
+    "clear:all": "rm -rf node_modules/ && npm run clear",
+    "deploy": "git push heroku master -f",
+    "lint": "eslint .",
+    "lint:md": "markdownlint . --ignore _book --ignore node_modules",
+    "start": "json-server --watch ./server/db.json --static ./client/",
+    "start-server-with-ssr": "node server/start.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "dependencies": {
+    "json-server": "^0.14.0",
+    "prerender-node": "^3.2.1",
+    "snyk": "^1.190.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-piecioshka": "^2.0.1",
+    "markdownlint-cli": "^0.13.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:piecioshka/warsawjs-workshop-26-my-photos.git"
+  },
+  "snyk": true
 }
