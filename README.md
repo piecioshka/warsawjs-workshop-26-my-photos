@@ -1,6 +1,5 @@
 # warsawjs-workshop-26-my-photos
 
-[![dependencies](https://david-dm.org/piecioshka/warsawjs-workshop-26-my-photos.svg)](https://github.com/piecioshka/warsawjs-workshop-26-my-photos)
 [![heroku](https://heroku-badge.herokuapp.com/?app=warsawjs-workshop-26-my-photos&style=flat&svg=1)](https://warsawjs-workshop-26-my-photos.herokuapp.com/)
 
 **WarsawJS Workshop #26**: Projekt będący portfolio pewnego fotografa
@@ -28,18 +27,6 @@
             `heroku git:remote -a NAZWA_APLIKACJI_NA_HEROKU`
         - Stworzyć polecenie `npm run deploy`, które będzie uruchamiało
             `git push heroku master`
-    + GitHub Pages
-        - Zainstalować paczkę `gh-pages`
-        - Stworzyć polecenie `npm run deploy`, które będzie uruchamiało
-            `NODE_DEBUG=gh-pages gh-pages -d client/`
-    + Firebase (<https://firebase.google.com/>)
-        - TODO
-    + Netlify (<https://www.netlify.com/>)
-        - TODO
-    + Surge (<http://surge.sh/>)
-        - TODO
-    + Microsoft Azure (<https://azure.microsoft.com/>)
-        - TODO
 * :white_check_mark: Prezentacja wybranego zdjęcia w formie lightboxa
 
     _Podobny projekt: <https://github.com/piecioshka/warsawjs-workshop-1-gallery>_
@@ -73,14 +60,17 @@
 * :white_check_mark: Dodawanie zdjęć do ulubionych (Fetch API)
     + Stworzyć funkcję `handleLike`
     + UWAGA: w komunikacji z serwerem należy dodać nagłówek:
+
         ```js
         headers: {
             "Content-Type": "application/json"
         }
         ```
+
     + Prezentowanie tylko ulubionych zdjęć
     + Stworzyć funkcję `handleDisplayFavoritesPhotos`
-* :white_check_mark: **Dodatkowo:** Prezentacja zdjęć w formie before / after za pomocą slidera
+* :white_check_mark: **Dodatkowo:** Prezentacja zdjęć w formie before / after
+    za pomocą slidera
     + Wykorzystać <https://github.com/piecioshka/slider-before-after>
 
 ## Wykorzystywane narzędzia :hammer:

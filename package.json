@@ -16,7 +16,7 @@
         "lint": "eslint .",
         "lint:md": "markdownlint . --ignore _book --ignore node_modules",
         "start": "json-server --watch ./server/db.json --static ./client/",
-        "start-server-with-ssr": "node server/start.js"
+        "start-server-with-ssr": "node ./server/start.js"
     },
     "dependencies": {
         "json-server": "^0.14.0",
