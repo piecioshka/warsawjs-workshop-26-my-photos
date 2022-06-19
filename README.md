@@ -59,7 +59,7 @@
     + Filtrowanie zdjęć według tytułu
 * :white_check_mark: Dodawanie zdjęć do ulubionych (Fetch API)
     + Stworzyć funkcję `handleLike`
-    + UWAGA: w komunikacji z serwerem należy dodać nagłówek:
+    + ⛔️ UWAGA: w komunikacji z serwerem należy dodać nagłówek:
 
         ```js
         headers: {
