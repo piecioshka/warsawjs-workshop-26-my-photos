@@ -36,6 +36,6 @@ module.exports = {
         ecmaVersion: 2018,
 
         // Support syntax ES2015 Import/Export
-        sourceType: "module"
+        sourceType: 'module'
     }
 };
