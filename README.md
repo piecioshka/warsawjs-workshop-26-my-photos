@@ -36,7 +36,7 @@
         go ze strony <https://loading.io/>
 * :white_check_mark: **Dodatkowo:** Wsparcie przeglądarek bez JavaScriptu
     + Zarejestrować się na <https://prerender.io/>
-    + Wygnerować token na stronie <https://prerender.io/>
+    + Wygenerować token na stronie <https://prerender.io/>
     + Zaktualizować wartość stałej `PRERENDER_TOKEN` w pliku `server/start.js`
 * :white_check_mark: Prezentowanie danych nt. zdjęcia: autora, tagu, tytuł
     + Stworzyć funkcję `displayPhotoDetails`
