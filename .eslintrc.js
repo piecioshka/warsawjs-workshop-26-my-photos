@@ -21,11 +21,7 @@ module.exports = {
         'object-curly-newline': 'off',
         'no-process-env': 'off',
         'func-style': 'off',
-        'arrow-parens': 'off',
         'no-use-before-define': 'off',
-        'no-magic-numbers': ['error', {
-            ignore: [0]
-        }],
     },
 
     // List of global variables.
