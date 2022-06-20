@@ -19,13 +19,13 @@
         "start-server-with-ssr": "node ./server/start.js"
     },
     "dependencies": {
-        "json-server": "^0.15.1",
-        "prerender-node": "^3.2.5"
+        "json-server": "^0.17.0",
+        "prerender-node": "^3.5.0"
     },
     "devDependencies": {
-        "eslint": "^6.3.0",
-        "eslint-config-piecioshka": "^2.0.2",
-        "markdownlint-cli": "^0.18.0"
+        "eslint": "^8.18.0",
+        "eslint-config-piecioshka": "^2.2.3",
+        "markdownlint-cli": "^0.31.1"
     },
     "repository": {
         "type": "git",
