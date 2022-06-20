@@ -1,7 +1,5 @@
 # warsawjs-workshop-26-my-photos
 
-[![heroku](https://heroku-badge.herokuapp.com/?app=warsawjs-workshop-26-my-photos&style=flat&svg=1)](https://warsawjs-workshop-26-my-photos.herokuapp.com/)
-
 ⛩️ WarsawJS Workshop #26 — JavaScript (Intermediate Level)
 
 ## Demo 🎉
