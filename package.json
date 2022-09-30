@@ -12,9 +12,7 @@
     "scripts": {
         "clear": "echo DONE",
         "clear:all": "rm -rf node_modules/ && npm run clear",
-        "deploy": "git push heroku master -f",
         "lint": "eslint .",
-        "lint:md": "markdownlint . --ignore _book --ignore node_modules",
         "start": "json-server --watch ./server/db.json --static ./client/",
         "start-server-with-ssr": "node ./server/start.js"
     },
@@ -24,8 +22,7 @@
     },
     "devDependencies": {
         "eslint": "^8.18.0",
-        "eslint-config-piecioshka": "^2.2.3",
-        "markdownlint-cli": "^0.31.1"
+        "eslint-config-piecioshka": "^2.2.3"
     },
     "repository": {
         "type": "git",
