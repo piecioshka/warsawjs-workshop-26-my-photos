@@ -4,7 +4,7 @@
 
 ## Demo 🎉
 
-<https://warsawjs-workshop-26-my-photos.herokuapp.com/>
+???
 
 ## Features
 
@@ -18,13 +18,6 @@
     + **Dodatkowo:** Ułożyć listy za pomocą `CSS Flexbox`
     + **Dodatkowo:** Dodać stopkę z encją `&copy;`
     + **Dodatkowo:** Dodać `GitHub Ribbon`: <https://blog.github.com/2008-12-19-github-ribbons/>
-* :white_check_mark: Deployment :rocket:
-    + Heroku
-        - Stworzyć nową aplikację na <https://dashboard.heroku.com/apps/>
-        - Połączyć lokalne repozytorium z aplikacją za pomocą polecenia
-            `heroku git:remote -a NAZWA_APLIKACJI_NA_HEROKU`
-        - Stworzyć polecenie `npm run deploy`, które będzie uruchamiało
-            `git push heroku master`
 * :white_check_mark: Prezentacja wybranego zdjęcia w formie lightboxa
 
     _Podobny projekt: <https://github.com/piecioshka/warsawjs-workshop-1-gallery>_
@@ -70,14 +63,13 @@
 * :white_check_mark: **Dodatkowo:** Prezentacja zdjęć w formie before / after
     za pomocą slidera
     + Wykorzystać <https://github.com/piecioshka/slider-before-after>
+* :white_check_mark: Deployment :rocket:
 
 ## Wykorzystywane narzędzia :hammer:
 
 * `eslint`
-* `markdownlint-cli`
 * `json-server`
 * **Dodatkowo:** `prerender-node`
-* **Dodatkowo:** `heroku`
 
 ## License
 
