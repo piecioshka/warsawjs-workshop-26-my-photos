@@ -2,7 +2,7 @@
 
 ⛩️ WarsawJS Workshop #26 — JavaScript (Intermediate Level)
 
-## Demo 🎉
+## Preview 🎉
 
 ???
 
